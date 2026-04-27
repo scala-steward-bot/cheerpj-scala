@@ -41,6 +41,7 @@ lazy val cheerpjScala = project
     scalacOptions ++= Seq(
       "-deprecation",
     ),
+    evictionErrorLevel := Level.Warn,
     libraryDependencies ++= Seq(
       "org.scala-sbt" %% "io" % "1.10.5" % Test,
       "io.circe" %% "circe-parser" % "0.14.15",
